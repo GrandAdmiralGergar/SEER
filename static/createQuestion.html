@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEER</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<script src="CREATE_QUESTION_JS"></script>  
+
+<div data-role="page" id="question">
+    <div data-role="content">
+        <!-- <form>     -->
+            <h1>Ask a New Question</h1>
+            <br>
+            <label for="title" class="ui-hidden-accessible">Question</label>
+            <input type="text" name="questionTitle" id="title" value="" placeholder="question" data-theme="a"/>
+            <br>
+            <fieldset data-role="controlgroup" id="checkboxes">            
+                <legend><h3>Select which groups can participate in this market</h3></legend>
+                GROUP_BOXES
+            </fieldset>
+            <br>
+            <h3>Add all of the possible outcomes below</h3>
+            <div id="input1" class="clonedInput" style="margin-bottom: 4px;">
+
+                <label for="option1" class="ui-hidden-accessible">Option</label>
+                <input type="text" name="option_label[]" id="option1" value="" placeholder="option" data-theme="a" />               
+            </div>
+            <div>
+                <input id="btnAdd" type="button" value="Add a new option">
+                <input id="btnDel" type="button" value="Remove last option">
+            </div>
+            <br>
+            <button id="submit" data-theme="b">Submit</button>
+            <a href="home" data-role="button" id="cancel" data-theme="a">Cancel</a>
+            <!-- <div align='center' class=ui-grid-a>
+                <div class=ui-block-a> <button id="submit" data-inline="true">Submit</button></div>
+                <div class=ui-block-b> <button type="button" id="cancel" data-inline="true" data-theme="w">Cancel</button></div>
+            </div> -->
+        <!-- </form> -->
+    </div>
+    FOOTER
+</div>
+
+</body>
+
+</html>

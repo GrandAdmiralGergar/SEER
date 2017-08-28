@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEER</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="login.js"></script>
+	<script src="register_new_user.js"></script>
+	<!-- <script src="jquery.cookie.js"></script> -->
+</head>
+<body >
+	<!-- Welcome -->
+	<div data-role="page" id="Login" >
+		<div data-role="header">
+			<h1>SEER </h1>
+		</div><!-- /header -->
+		
+		<div data-role="content">
+<!--			<form>-->
+				<div style="padding:10px 20px;">
+					<h3>Login to your SEER account</h3>
+					<label for="un" class="ui-hidden-accessible">Username:</label>
+					<input type="text" name="user" id="username" value="" placeholder="username" data-theme="a"/>
+					<label for="pw" class="ui-hidden-accessible">Password:</label>
+					<input type="password" name="pass" id="password" value="" placeholder="password" data-theme="a" />
+					<button type="button" id="login" data-theme="b">Sign in</button>
+					<a href="#Register" data-role="button" >No user account? Register here!</a>
+				</div>
+<!--			</form> -->
+		</div><!-- /content -->
+		<div data-role="footer">
+			<h4>CS530 Developing User Interfaces 2017</h4>
+		</div>
+	</div><!-- /page -->
+
+	<div data-role="page" id="Register">
+		<div data-role="header">
+			<h1>SEER </h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<form>
+				<div style="padding:10px 20px;">
+					<h3>Create your SEER account!</h3>
+					<label for="un" class="ui-hidden-accessible">Username:</label>
+					<input type="text" name="user" id="un" value="" placeholder="username" data-theme="a"/>
+
+					<label for="pw" class="ui-hidden-accessible">Password:</label>
+					<input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a" />
+
+					<label for="pw" class="ui-hidden-accessible">Verify Password:</label>
+					<input type="password" name="verify-pass" id="pw-valid" value="" placeholder="password" data-theme="a" />
+
+					<label for="email" class="ui-hidden-accessible">Email Address:</label>
+					<input type="email" name="email" id="email" value="" placeholder="email" data-theme="a" />
+
+					<button type="button" id="register" data-theme="b">Sign in</button>
+				</div>
+			</form>
+		</div>		
+	</div><!--/register page-->	
+</body>
+</html>

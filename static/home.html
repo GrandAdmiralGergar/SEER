@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEER</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="home">
+		<div data-role="content">
+		    <h1>Welcome to SEER, USERNAME</h1>
+		    <h3>Available questions...</h3>
+		    QUESTIONS
+		    <br>
+		    <h3>Your groups</h3>
+		    GROUPS
+		    <br>
+            <a href="createQuestion" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon">Create Question</a>
+            <a href="createGroup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon">Create Group</a>
+        </div>
+    FOOTER
+		<div class="ui-popup-container pop ui-popup-hidden ui-popup-truncate" id="popupSearch-popup">
+			<div data-role="popup" id="findUser" data-theme="a" class="ui-corner-all ui-popup ui-body-a ui-overlay-shadow">
+				<form>
+					<div style="padding:10px 20px;">
+						<div class="ui-input-text ui-body-a ui-corner-all">
+							<label for="searchUserName" class="ui-hidden-accessible">User</label>
+							<input type="text" name="searchUser" id="searchUserName" value="" placeholder="user" data-theme="a">
+						</div>
+						<button type="submit" data-theme="b" class=" ui-btn ui-btn-b ui-shadow ui-corner-all">Find User</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="ui-popup-container pop ui-popup-hidden ui-popup-truncate" id="popupSearch-popup">
+			<div data-role="popup" id="findGroup" data-theme="a" class="ui-corner-all ui-popup ui-body-a ui-overlay-shadow">
+				<form>
+					<div style="padding:10px 20px;">
+						<div class="ui-input-text ui-body-a ui-corner-all">
+							<label for="searchGroupName" class="ui-hidden-accessible">Group</label>
+							<input type="text" name="searchGroup" id="searchGroupName" value="" placeholder="group" data-theme="a">
+						</div>
+						<button type="submit" data-theme="b" class=" ui-btn ui-btn-b ui-shadow ui-corner-all">Find Group</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="ui-popup-container pop ui-popup-hidden ui-popup-truncate" id="popupSearch-popup">
+			<div data-role="popup" id="findQuestion" data-theme="a" class="ui-corner-all ui-popup ui-body-a ui-overlay-shadow">
+				<form>
+					<div style="padding:10px 20px;">
+						<div class="ui-input-text ui-body-a ui-corner-all">
+							<label for="searchQuestionName" class="ui-hidden-accessible">Question</label>
+							<input type="text" name="searchQuestion" id="searchQuestionName" value="" placeholder="Question" data-theme="a">
+						</div>
+						<button type="submit" data-theme="b" class=" ui-btn ui-btn-b ui-shadow ui-corner-all">Find Question</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!--/home page -->
+
+	<div data-role="page" id="group">
+		<div data-role="content">
+		</div> <!--content-->
+	</div><!--/group page -->
+
+	<div data-role="page" id="user">
+		<div data-role="content">
+		</div> <!--content-->
+	</div><!--/user page -->
+</body>
+</html>

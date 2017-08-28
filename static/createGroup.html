@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEER</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<script src="CREATE_GROUP_JS"></script>  
+
+<div data-role="page" id="question">
+    <div data-role="content">
+        <h3>Create a new group</h3>
+        <label for="title" class="ui-hidden-accessible">Question</label>
+        <input type="text" name="groupName" id="groupName" value="" placeholder="Group Name" data-theme="a"/>
+        <label for="groupDescription" class="ui-hidden-accessible">Option</label>
+        <input type="text" name="groupDescription" id="groupDescription" value="" placeholder="Description" data-theme="a" />               
+        <br>
+        <button id="submit" data-theme="b">Submit</button>
+            <a href="home" data-role="button" id="cancel" data-theme="a">Cancel</a>
+    </div>
+    FOOTER
+</div>
+
+</body>
+
+</html>

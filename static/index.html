@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEER</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="jquery.cookie.js"></script>
+</head>
+<script>
+/*Execute the init function when the window is done loading*/
+window.onload=init;
+function init()
+{
+        var username = $.cookie('username');
+        if(!username)
+        {
+		$(location).attr('href', 'login.html');
+        }
+	else
+	{
+		$(location).attr('href', 'home.html');
+	}
+};
+
+</script>
+</html>
